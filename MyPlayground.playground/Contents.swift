@@ -24,7 +24,7 @@ print("Casting to Int: \(Int(age))")
 print("Casting to float: \((age as NSString).floatValue)")
 
 
-/****************************************** Math **********************************************/
+/****************************************** Math ***********************************************/
 print(2 + 2)
 print(3 % 2)
 
@@ -34,3 +34,41 @@ print(num + 1)
 
 //Random number generator. Generates random number between 0 - 19
 print("Random number is: \(arc4random() % 20)")
+
+/*********************************** Conditional Statements *************************************/
+
+let studentAge: Int = 19
+
+//if else
+if studentAge < 18  {
+    print("Under age")
+}else if(studentAge > 18 && studentAge < 21){
+    print("Valid age but can't work")
+}
+
+// ? - Ternary operator
+var legalAge: Bool = studentAge > 21 ? true: false
+print(legalAge)
+
+
+//Switch statement
+let color: String = "blue"
+
+switch color {
+case "red":
+    print("RED")
+default:
+    print("No color selected")
+}
+
+//Giving a range using ...
+let score: Int = 90
+
+switch score {
+case 50...70:
+    print("Good Score")
+case 70...95:
+    print("Great Score")
+default:
+    print("No score available")
+}
