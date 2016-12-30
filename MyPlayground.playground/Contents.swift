@@ -97,6 +97,25 @@ for row in array{
     print("\(row)")
 }
 
+/**************************************** Dictionaries *********************************************/
+
+//Create Dictionary: key:value
+var dict = [String:String]()
+
+dict["apple"] = "red"
+dict["banana"] = "yellow"
+dict["strawberry"] = "red"
+
+print(dict)
+
+
+
+
+
+
+
+
+
 
 
 
