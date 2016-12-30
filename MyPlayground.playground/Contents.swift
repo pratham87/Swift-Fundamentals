@@ -10,6 +10,8 @@ var str: String = "Hello, playground"
 let x = 3.1456
 print("Constant is:  \(x)")
 
+//println() is deprecated in swift 3
+
 
 /************************************* Casting Objects ****************************************/
 
@@ -109,14 +111,52 @@ dict["strawberry"] = "red"
 print(dict)
 
 
+/****************************************** Tuples **************************************************/
+
+//Tuples can be used to return multiple data at once from a function
+var employee = (id:1, firstName:"John", lastName:"Costa")
+print("Employee's first name: \(employee.firstName)")
+print("Employee's last name: \(employee.lastName)")
 
 
+/****************************************** Loops ***************************************************/
+
+//For in - providing a range
+for i in 1...5 {
+    print(i)
+}
+
+print("\nStride function")
+
+//Stride function - Jump the data in a range by a certain value
+for i in stride(from: 1, to: 10, by: 2){
+    print(i)
+}
+
+print("\nUsing for loop on Dictionary")
+
+//Using for loop on Dictionary
+let fruits = ["apple":"red", "mango":"yellow"]
+for (key, value) in fruits{
+    print("\(key) : \(value)")
+}
+
+print("\nwhile loop")
 
 
+//while loop
+var i = 1
+while i<=5 {
+    print(i)
+    i+=1
+}
 
+print("\nrepeat")
 
-
-
-
-
+//repeat - do while loop
+var j = 0
+repeat{
+    print(j)
+    j+=1
+}while j < 6
 
