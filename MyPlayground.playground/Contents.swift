@@ -1,10 +1,9 @@
-//: Playground - noun: a place where people can play
+//: Playground - Swift 3 basics
 
-//Data types
 import UIKit
 import Darwin
 
-/************************************* Data types ********************************************/
+/************************************* Data types *********************************************/
 var str: String = "Hello, playground"
 
 //constants - Immutable objects
@@ -13,6 +12,8 @@ print("Constant is:  \(x)")
 
 
 /************************************* Casting Objects ****************************************/
+
+//Int to Float and Float to Int
 var test1: Int = 15
 var test2: Float = 2.0
 print("Casting float value: \(Int(test2))")
@@ -72,3 +73,31 @@ case 70...95:
 default:
     print("No score available")
 }
+
+/****************************************** Arrays **********************************************/
+
+//Create array: Way 1
+var employees: Array<String> = ["John", "Bob", "Adam"]
+print(employees[0])
+
+//Create array: Way 2
+var colors = [String]()
+colors.append("red")
+colors.append("blue")
+colors.append("green")
+print(colors)
+
+//Insert at Index
+colors.insert("violet", at: 1)
+print(colors)
+
+//2D array
+var array: [[Int]] = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+for row in array{
+    print("\(row)")
+}
+
+
+
+
+
