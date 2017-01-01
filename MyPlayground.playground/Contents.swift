@@ -160,3 +160,48 @@ repeat{
     j+=1
 }while j < 6
 
+/****************************************** Functions *************************************************/
+
+print("\nFunctions:")
+
+func sayHello(to name: String){
+    print("\nHello \(name)")
+}
+sayHello(to: "john")
+
+print("\nReturn a value")
+
+//return a value
+func test(num: Int)->String{
+    print(num)
+    return String(num)
+}
+test(num: 1)
+
+print("")
+
+// Return multiple types from function. Returning a tuple
+func getMult(number: Int) -> (x: Int, y: Int){
+    let x = number * 2
+    let y = number * 3
+    
+    return (x, y)
+}
+
+var answer = getMult(number: 50)
+
+print(answer.x)
+print(answer.y)
+
+print("\nINOUT Param:")
+
+//inout parameter
+func double(number: inout Int) {
+    number = number * 2
+}
+
+var n = 10
+
+double(number: &n) // changes 10 to 20
+
+print(n) // 20
