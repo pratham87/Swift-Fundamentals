@@ -1,4 +1,4 @@
-**<h2>Topics covered<h2>**
+**##Topics covered**
 * Data types
 * Casting Objects
 * Math
