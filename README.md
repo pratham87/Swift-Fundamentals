@@ -1,2 +1,11 @@
 **<h2>Topics covered<h2>**
-df
+* Data types
+* Casting Objects
+* Math
+* Conditional Statements
+* Arrays
+* Dictionaries
+* Tuples
+* Loops
+* Functions
+```WIP```
