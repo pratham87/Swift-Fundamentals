@@ -205,3 +205,41 @@ var n = 10
 double(number: &n) // changes 10 to 20
 
 print(n) // 20
+
+/****************************************** Closures *************************************************/
+// Anonymous Function. Just like Lambda expressions in Java.
+// (arguments) -> (returnValue) = {body}
+
+print("\nClosures: \n\nNo arguments or return value:")
+
+//No arguments or return value
+var sayHelloThere: () -> () = {
+    print("Hello there")
+}
+
+sayHelloThere()
+
+print("\nReturning single data:")
+
+//Returning single data
+var cube: (Int) -> (Int) = {
+    num in
+    return num * num * num
+}
+
+print("\(cube(2))")
+
+// An Array has a map method that accepts a closure that performs an action on every item in the array
+let numsToSquare = [1,2,3,4,5,6]
+
+//let squareClosure: (Int) -> (String) = {
+//    String in
+//    "\(num * num)"
+//}
+
+let squaredNums = numsToSquare.map {
+    (num: Int) -> String in
+    "\(num * num)"
+}
+
+print("\n\(squaredNums)")
