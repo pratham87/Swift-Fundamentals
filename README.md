@@ -1,4 +1,4 @@
-**## Topics covered**
+**```Topics covered```**
 * Data types
 * Casting Objects
 * Math
@@ -8,4 +8,4 @@
 * Tuples
 * Loops
 * Functions
-```WIP```
+* Closures
