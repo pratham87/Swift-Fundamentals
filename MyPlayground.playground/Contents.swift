@@ -243,3 +243,30 @@ let squaredNums = numsToSquare.map {
 }
 
 print("\n\(squaredNums)")
+
+/****************************************** Classes **************************************************/
+
+
+class Person {
+    var name: String = "No Name"
+    var height: Double = 0.0
+    var weight: Double = 0.0
+    
+    init(name: String, height: Double, weight: Double){
+        self.name = name
+        self.height = height
+        self.weight = weight
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
