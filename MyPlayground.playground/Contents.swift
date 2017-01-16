@@ -246,20 +246,28 @@ print("\n\(squaredNums)")
 
 /****************************************** Classes **************************************************/
 
+print("\nClasses:")
 
 class Person {
     var name: String = "No Name"
     var height: Double = 0.0
     var weight: Double = 0.0
     
+    //init is the constructor and self is 'this' in Java
     init(name: String, height: Double, weight: Double){
         self.name = name
         self.height = height
         self.weight = weight
    }
-
+    
+    func getInfo(){
+        print("\(self.name) is \(self.height) ft tall and weighs \(self.weight) ")
+    }
 }
 
+//Create a Person instance
+var john = Person(name:"John", height: 5, weight: 60)
+john.getInfo()
 
 
 
