@@ -284,9 +284,26 @@ class Adam: Person{
 var a = Adam(name:"Adam", height: 6, weight: 70)
 a.getInfo()
 
+/*************************************** Protocols (Interfaces) ******************************************/
 
+protocol Fruit{
+    func color(name:String) -> String
+}
 
+//Adopting (Implementing) the Protocol
+class FruitColor : Fruit{
+    
+    //implemented the protocol method
+    internal func color(name: String) -> String {
+        if (name == "apple") {
+            return "red"
+        }
+        return "no color"
+    }
+}
 
+var apple = FruitColor()
+print(apple.color(name:"apple"))
 
 
 
