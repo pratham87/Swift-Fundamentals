@@ -261,7 +261,7 @@ class Person {
    }
     
     func getInfo(){
-        print("\(self.name) is \(self.height) ft tall and weighs \(self.weight) ")
+        print("\(self.name) is \(self.height) ft tall and weighs \(self.weight) lbs")
     }
 }
 
@@ -269,7 +269,20 @@ class Person {
 var john = Person(name:"John", height: 5, weight: 60)
 john.getInfo()
 
+print("\nInheritance:")
 
+// Inheritance
+class Adam: Person{
+    
+    override func getInfo(){
+        print("\nCalling parent class method:")
+        super.getInfo()
+    }
+    
+}
+
+var a = Adam(name:"Adam", height: 6, weight: 70)
+a.getInfo()
 
 
 
