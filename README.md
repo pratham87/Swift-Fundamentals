@@ -9,3 +9,5 @@
 * Loops
 * Functions
 * Closures
+* Classes
+* Protocols
