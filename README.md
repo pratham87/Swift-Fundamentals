@@ -11,3 +11,5 @@
 * Closures
 * Classes
 * Protocols
+* Enums
+* Generics
