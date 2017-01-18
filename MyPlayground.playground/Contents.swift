@@ -305,6 +305,54 @@ class FruitColor : Fruit{
 var apple = FruitColor()
 print(apple.color(name:"apple"))
 
+/********************************************* Enums ****************************************************/
+
+
+enum Color: Int {
+    case blue      //Another way: case blue = 1
+    case green
+    case red
+    case purple
+    case yellow
+    
+    // Set default value to blue
+    init () {
+        self = .green
+    }
+    
+    func getColor() -> String{
+        
+        switch(self){
+        case .blue: return "Blue"
+        case .green: return "Green"
+        case .red: return "Red"
+        case .purple: return "Purple"
+        case .yellow: return "Yellow"
+        
+        }
+    }
+}
+
+var someColor = Color()
+print(someColor.rawValue)
+
+var favColor = Color.green
+print(favColor.rawValue)
+
+print(favColor.getColor())
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
